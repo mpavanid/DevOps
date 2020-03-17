@@ -1,0 +1,23 @@
+pipeline {
+      agent any
+	  stages {
+		stage ('compile'){
+			steps { 
+					echo  COmplied succesfully;
+			}
+		}
+		stage ('Junit'){
+			steps { 
+					echo  Junit passes successfully succesfully;
+			}
+		}
+		stage ('Quality-gate'){
+			steps { 
+					echo  Sonar qube quality gate passed succesfully;
+			}
+		}
+		stage ('deploy'0{
+			steps {
+					echo  deployment pass;
+			}
+		}

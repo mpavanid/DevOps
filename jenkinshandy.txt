@@ -1,0 +1,50 @@
+useful tips in jenkins
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+
+sudo rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+
+http://13.58.162.10:8080
+to fetch initial admin pwd
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+http://13.59.51.71:8080/view/First_view/delete
+
+to change portnumber
+sudo cat /etc/sysconfig/jenkins
+to stop jenkins
+sudo service jenkins stop
+to uninstall jenkins
+sudo service jenkins stop
+sudo yum remove jenkins
+sudo rm -r /var/lib/jenkins
+
+concepts in jenkins
+----------------------
+
+1. user management
+2. security management
+3. git integration
+4. changing default port of jenkins
+4. maven job
+5. SMTP mail server
+6. backup of jenkins
+7. upgrading jenkins
+8. upgrading plugin
+9. installing plugin offline
+10. migrating whole jenkins from one server to another server
+11. configuring jobs
+12. pipeline job
+13. removing particular plugin
+14. jenkins-cli
+15. master node configuration
+16. linux master & windows slave
+17. start stop and restart jenkins
+18. changing Jenkins home directory
+
+useful info
+----------------
+differe between global tools & plugin
+
+global tools maintains multiple version
+plugins maintain single version
