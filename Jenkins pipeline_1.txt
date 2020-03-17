@@ -1,0 +1,43 @@
+pipeline {
+      agent any
+	  stages {
+		stage ('compile'){
+			steps { 
+					echo " COmplied succesfully";
+			}
+		}
+		stage ('Junit'){
+			steps { 
+					echo " Junit passes successfully succesfully";
+			}
+		}
+		stage ('Quality-gate'){
+			steps { 
+					echo " Sonar qube quality gate passed succesfully";
+			}
+		}
+		stage ('deploy'){
+			steps {
+					echo " deployment pass";
+			}
+		}
+	 }
+
+	post {
+		always{
+			echo ' always runs this step'
+		}
+		success{
+			echo 'run only when the build is successfull'
+		}
+		failure {
+			echo 'run only when the build is failure'
+		}
+		unstable{
+			echo 'this will run only if the run was marked unstable'
+		}
+		changed{
+			echo 'this will run if the state of the pipeline has changed'
+		}
+	}
+}

@@ -1,0 +1,56 @@
+pipeline{
+	agent any
+		stages{
+			stage ('Git-checkout'){
+				steps{
+					echo "checking our from git";
+					git 'https://github.com/mpavanid/Helloworld.git'
+				}
+			}
+			stage ('Build'){
+				steps{
+					echo "Building the checkedout project";
+					bat 'build.bat'
+				}
+			}
+			stage ('Unit-Test'){
+				steps{
+					echo "Running Jnuit tests";
+					bat 'Unit.bat'
+				}
+			}
+			stage ('Quality-gate'){
+				steps{
+					echo "Verifying quality tests";
+					bat 'quality.bat'
+				}
+
+			}
+			stage ('Deploy'){
+				steps{
+					echo "Verifying quality tests";
+					bat 'Deploy.bat'
+				}
+			}
+		}
+post {
+		always{
+			echo ' always runs this step'
+		}
+		success{
+			echo 'run only when the build is successfull'
+		}
+		failure {
+			echo 'run only when the build is failure'
+		}
+		unstable{
+			echo 'this will run only if the run was marked unstable'
+		}
+		changed{
+			echo 'this will run if the state of the pipeline has changed'
+		}
+	}
+}	
+
+https://git-scm.com/videos
+	
