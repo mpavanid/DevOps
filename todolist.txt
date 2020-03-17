@@ -1,0 +1,54 @@
+25-september-2019
+---------------------
+1. ITIL certification
+2. Docker
+3. splunk basics for monitoring
+4. kubernetes basics
+5. resume
+6. Jenkins CI/CD pipeline
+7. Naukri account with proper profile
+8. Maven & Git basics revsion
+9. 
+
+
+
+
+
+key points can be used for me :
+
+1.•	Experience as a DevOps Engineering in automating, building, deploying, and releasing of code from one environment to other environment.
+2.•	Experience in working on version controller tools like Github.
+3.•	Expertise in using build tools like Jforg for the building of deployable artifacts such as War, Ear & Jar from source code. Application Deployments & Environment configuration using Ansible. 
+4.•	Ability in deploying the developed code in a Apache Tomcat/JBOSS.
+5.•	Experience with CI/CD tool Teamcity and jenkins
+6.•	Knowledge on SonarQube as a code quality metrics.
+7.• Experience in Dockers and kubernets
+8.•	Strong knowledge / experience in creating Teamcity CI/CD pipelines and good experience in automating deployment pipelines. 
+9.•	Strong experience in working in Linux and Windows environments.
+10.• Copying the files, codes, creating directories, adding users to Linux, managing the user permissions, managing the file permissions in Linux using Ansible.
+11.•	Implementing a Continuous Delivery framework using Jenkins and Maven in Linux environment.
+12.•	Implementing a Continuous Delivery framework using Jenkins and Maven in Linux environment.
+13.•	Developing pom.xml files for Maven build scripts. 
+14.•	Set up CI (Continuous Integration) for major releases in Jenkins. 
+15.•	Worked extensive with MAVEN build tools for writing build.xml and pom.xml files respectively
+16.•	Involved in managing other version control tools like GIT.
+
+other responsibilites:
+1. 	Assigning tasks to team and taking team calls and one – one in monthly 
+
+
+3.training test for docker
+4.Ansible training virtual box....installation
+26-30 th 4 hours 4 days --ticket raised
+
+
+devops interview questions in youtube by ameerpet and edureka
+
+todays tasks
+------------------
+docker
+docker volumes
+docker composer
+docker swarm 
+docker prune
+install jenkins, mongoDB, mysql,nginx,JFROG using docker
